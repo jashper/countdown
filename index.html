@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* background-color: #aaa; */
+        }
+
+        body {
+            background-color: #aaa;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+
+            margin: auto;
+            font-size: 1.2rem;
+            white-space: nowrap;;
+            color: #fff;
+            margin-top: 100px;
+
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+            background-color: #bbb;
+        }
+
+        .container #counter{
+            width: 100%;
+            font-size: 1.4rem;
+            text-align: center;
+            display: block;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+        }
+
+        .container .note {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .container .notice h2,
+        .container .notice a
+        {
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .container .notice a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container .notice a:hover {
+           color: #eee;
+        }
+
+        .container .notice a::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            bottom: 0%;
+            left: 0%;
+            position: absolute;
+            background-color: #eee;
+            transition: width 0.2s ease-in;
+        }
+
+        .container .notice a:hover::after {       
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <span class="note">count from today to <time> 2028-02-27</time></span>
+        <div id="counter"></div>
+        <div class="notice">
+            <h2>try to compare with Countdown.js</h2>
+            <a href="http://countdownjs.org/demo.html" target="_blank"> > > click here to go</a>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="./countdown.js"></script>
+
+
+</body>
+</html>

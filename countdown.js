@@ -35,11 +35,11 @@ function run() {
     let hour = ((countdown - sec - min * 60) / (60*60)) % 24;
     let day = ((countdown - sec - min * 60 - hour * 3600) / (60 * 60 * 24))
     
-    let year  = Math.floor(day / 365)
+    let year  = Math.floor((day- leap) / 365)
     // console.log(target.getMonth()<2)
     // console.log(leap)
 
-    day = (day % 365) - leap
+    day = ((day- leap) % 365)
 
     //print on screen
     counter.innerHTML = `<h1>${year}年 ${day} 天 ${hour} 時 ${min} 分 ${sec} 秒</h1>`

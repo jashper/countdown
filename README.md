@@ -1,2 +1,7 @@
 # countdown
- This project regarding for countdown with YEARS, DAYS, MINUTES and SECONDS. 
+ This project is regarding countdown for YEARS, DAYS, MINUTES and SECOND with JavaScript only.
+ While covers with years, its a condition to identify intercalary year(leap) and common year, as attached.
+ This project has compare with countdown.js script for accuration. Its fine XD
+ 
+ https://stackoverflow.com/questions/11112497/javascript-countdown-with-year-month-day
+ 

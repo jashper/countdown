@@ -24,8 +24,8 @@ condition statements:-
 condition statements :-
     line46: target.getMonth() < 2 && ary.includes(dateEnd) ? leap-=1 : leap = leap;
 
-    In v2, leap year that contains leap and less than Feb will be check before -1 days
+In v2, leap year that contains leap and less than Feb will be check before -1 days
     
     Hence, v1 condition statement will get 0.
-    For more, only those are leap year and less than FEB pass through only will get -1.
+For more, only those are leap year and less than FEB pass through only will get -1.
 

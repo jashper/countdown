@@ -17,14 +17,14 @@ The leap days will not take count when target date is less than FEB. Its weird a
  Final result shows 184 days that cause by #error 1.
 tD is less than FEB and its non-leap year, condition statement will get -1. And the result pass through like this:-
 
-       line46: day = 183 - (-1) = 184
+       <sub>line46: day = 183 - (-1) = 184<sub>
 
 The result should be 183 days. But,#error1 cause an extra days in final.
 **This has been revised in 1.2.**
 
-    line46: target.getMonth() < 2 && ary.includes(dateEnd) ? leap-=1 : leap = leap;
-    Hence, 1.1 condition statement cause #error1 will get 0.
+<sub>line46: target.getMonth() < 2 && ary.includes(dateEnd) ? leap-=1 : leap = leap;<sub>
 
+**Hence, 1.1 condition statement cause #error1 will get 0.**
 In 1.2, countdown tD there is leap years and less than Feb will be check before subtract 1 day.   
 
 
